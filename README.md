@@ -28,3 +28,8 @@ V-11/11/19
     
    Para los archivos de datos(xml, json), se guardaran dentro de la carpeta “./res/raw”, que se creara manualmente si no esta ya creada. </dd>
 </dl>
+
+<dl>
+  <a name=Datos><dt>2.  Creación de los modelos de datos:</dt></a>
+  <dd>Crearemos los modelos de datos en relación con los documentos que hemos importado anteriormente(si hay), y implementamos en la clase Serializable. </dd>
+</dl>
