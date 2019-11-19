@@ -320,5 +320,14 @@ V-11/11/19
         return parsed;
     }
 ```
+<dd>Al acabar el constructor creamos el método parse donde leerá el fichero y almacenara los datos según el modelo que hemos creado anteriormente dentro de un array para su posterior uso.</dd>
+
+```java
+    public Contacto[] getContactos(){
+        return contactos;
+    }
+```
+
+<dd>Por ultimo creamos el método get para los datos que parseamos y guardamos en el método anterior para poder pasarlos a las demás clases. </dd>
 
 </dl>
