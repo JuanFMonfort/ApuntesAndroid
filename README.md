@@ -33,3 +33,45 @@ V-11/11/19
   <a name=Datos><dt>2.  Creación de los modelos de datos:</dt></a>
   <dd>Crearemos los modelos de datos en relación con los documentos que hemos importado anteriormente(si hay), y implementamos en la clase Serializable. </dd>
 </dl>
+
+<dl>
+  <a name=LayoutsFrag><dt>3.  Creamos los layouts de los fragments:</dt></a>
+  <dd>Dependiendo de como sea la aplicación, si hay una lista principal creamos un listitem de el modelo que queramos listar, en el que introduciremos los datos que queramos mostrar en las opciones de la lista.</dd>
+  
+```xml
+  <?xml version="1.0" encoding="utf-8"?>
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtVNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVNom" />
+
+    <TextView
+        android:id="@+id/txtVNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
+</dl>
