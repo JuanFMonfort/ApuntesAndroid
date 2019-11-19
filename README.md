@@ -1,4 +1,4 @@
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+V-1.0
 # Guiá de pasos Creación de Aplicación Android.
 
 **<a href=#Extern>1. Documentos externos.</a>**  
