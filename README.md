@@ -73,5 +73,6 @@ V-11/11/19
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
-
+<dd>Crearemos los fragments  uno para la lista y otro para el detalle, en la opción de la lista introduciremos el listView  que le daremos el nombre lstListado, en la opción del detalle introduciremos los campos que queramos que se muestren cuando seleccionemos un campo del fragment_listado.
+</dd>
 </dl>
