@@ -278,4 +278,47 @@ V-11/11/19
         this.contactosFile = c.getResources().openRawResource(R.raw.contacts);
     }
 ```
+
+<dd>Después de crear el constructor y declarar los datos del array y el file empezamos a parsear los campos del archivo.</dd>
+
+```java
+    public boolean parse(){
+        boolean parsed = false;
+        String jsonContactos = null;
+        contactos = null;
+        try {
+            int sizeContactos = contactosFile.available();
+            byte[] bufferContactos = new byte[sizeContactos];
+            contactosFile.read(bufferContactos);
+            contactosFile.close();
+            jsonContactos = new String(bufferContactos, "UTF-8");
+
+            JSONTokener tokener = new JSONTokener(jsonContactos);
+            JSONArray jsonArray = new JSONArray(tokener);
+            contactos = new Contacto[jsonArray.length()];
+            for (int i=0; i<jsonArray.length(); i++){
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                int id = jsonObject.getInt("id");
+                String nombre = jsonObject.getString("name");
+                String apellidos = jsonObject.getString("firstSurname")+" "+jsonObject.getString("secondSurname");
+                String fecha = jsonObject.getString("birth");
+                String dir = jsonObject.getString("address");
+                String tel1 = jsonObject.getString("phone1");
+                String tel2 = jsonObject.getString("phone2");
+                String email = jsonObject.getString("email");
+                String foto = jsonObject.getString("photo");
+                String compa = jsonObject.getString("company");
+                contactos[i]=new Contacto(id, nombre, apellidos, foto, fecha, compa, email, tel1, tel2, dir);
+            }
+            parsed=true;
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return parsed;
+    }
+```
+
 </dl>
