@@ -268,3 +268,14 @@ V-11/11/19
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 </dl>
+
+<dl>
+  <a name=Parser><dt>4.  Creamos el parser:</dt></a>
+  <dd>Creamos el parser que importara los datos del archivo(json, xml) en el que se almacenara en un array y obtendremos los datos mediante un InputStream.</dd>
+
+```java
+    public ContactoParser(Context c){
+        this.contactosFile = c.getResources().openRawResource(R.raw.contacts);
+    }
+```
+</dl>
