@@ -1,22 +1,29 @@
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 # Guiá de pasos Creación de Aplicación Android.
 
-**<a href=#Clases>1. Clases</a>**  
+**<a href=#Extern>1. Documentos externos.</a>**  
 ----
-**<a href=#Clases>1. Clases</a>**  
+**<a href=#Datos>2. Modelo de datos.</a>**  
 ----
-**<a href=#Objeto>2. Objeto</a>**  
+**<a href=#LayoutsFrag>3. Layouts de los fragments.</a>**  
 ----
-**<a href=#Sobrecarga>3. Sobrecarga de métodos</a>**  
+**<a href=#Parser>4. Perser.</a>**  
 ----
-**<a href=#Herencia>4. Herencia</a>**  
+**<a href=#Listener>5. Listener</a>**  
 ----
-**<a href=#Polimorfismo>5. Polimorfismo</a>**  
+**<a href=#Adaptadores>6. Adaptadores</a>**  
 ----
-**<a href=#Interface>6. Interface</a>**  
+**<a href=#Fragments>7. Fragments</a>**  
+----
+**<a href=#MainActivity>8. MainActivity</a>**  
+----
+**<a href=#Layouts>9. Layouts</a>**  
+----
+**<a href=#Manifest>10. Manifest</a>**  
 ----
 
 <dl>
   <a name=p1><dt>1. Importacion de los Documentos externos:</dt></a>
-  <dd>Para los archivos de imagen(png, jpg), se guardaran dentro de la carpeta “./res/drawable(v24)” . Para los archivos de datos(xml, json), se guardaran dentro de la carpeta “./res/raw”, que se creara manualmente si no esta ya creada. </dd>
+  <dd>Para los archivos de imagen(png, jpg), se guardaran dentro de la carpeta “./res/drawable(v24)” . 
+    Para los archivos de datos(xml, json), se guardaran dentro de la carpeta “./res/raw”, que se creara manualmente si no esta ya creada. </dd>
 </dl>
