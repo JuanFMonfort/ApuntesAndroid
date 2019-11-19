@@ -331,3 +331,15 @@ V-11/11/19
 <dd>Por ultimo creamos el método get para los datos que parseamos y guardamos en el método anterior para poder pasarlos a las demás clases. </dd>
 
 </dl>
+
+<dl>
+  <a name=Listener><dt>5. Creamos el listener (interfaz de la clase objeto que cargaremos):</dt></a>
+  <dd>Creamos la clase listener donde llamamos el método de cuando seleccionamos un objeto de la lista en el fragment del listado.</dd>
+  
+```java
+    public interface IContactosListener {
+        void onContactoSeleccionado(Contacto c);
+    }
+```
+  
+</dl>
