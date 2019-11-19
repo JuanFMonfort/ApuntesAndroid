@@ -343,3 +343,8 @@ V-11/11/19
 ```
   
 </dl>
+
+<dl>
+  <a name=Adaptadores><dt>6. Creamos las clases adapadores:</dt></a>
+  <dd>Creamos los adaptadores donde el layout del listado elegimos si la lista la queremos con RecyclerView o ListView.</dd>
+</dl>
