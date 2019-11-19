@@ -24,5 +24,5 @@ V-11/11/19
 
 <dl>
   <a name=p1><dt>1. Importacion de los Documentos externos:</dt></a>
-  <dd>Para los archivos de imagen(png, jpg), se guardaran dentro de la carpeta “./res/drawable(v24)”. Para los archivos de datos(xml, json), se guardaran dentro de la carpeta “./res/raw”, que se creara manualmente si no esta ya creada. </dd>
+  <dd>Para los archivos de imagen(png, jpg), se guardaran dentro de la carpeta *“./res/drawable(v24)”*. Para los archivos de datos(xml, json), se guardaran dentro de la carpeta *“./res/raw”*, que se creara manualmente si no esta ya creada. </dd>
 </dl>
