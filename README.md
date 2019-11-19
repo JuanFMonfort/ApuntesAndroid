@@ -1,4 +1,4 @@
-V-1.0
+V-11/11/19
 # Guiá de pasos Creación de Aplicación Android.
 
 **<a href=#Extern>1. Documentos externos.</a>**  
